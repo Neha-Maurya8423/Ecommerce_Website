@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Hii</h1>
+    <button >stop</button>
+    <button id="start">Inteval</button>
+    <script>
+    const changeText=function(){
+  document.getElementById("h1").innerText='This is SetTimeOut function'
+}
+    setTimeout(changeText,2000);
+
+   const sayDate =function(str){
+    console.log(str,Date.now());
+   }
+const interval1=setInterval(sayDate,2000,"Hii Neha");
+clearInterval(interval1);
+
+    </script>
+</body>
+</html>

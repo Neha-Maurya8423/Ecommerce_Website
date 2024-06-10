@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="div1">
+      <input type="text" class="input_box" id="passwordOutput" />
+      <button id="button" onclick="copyPassword()">Copy</button>
+    </div>
+    <div class="div2">
+      <select name="select" id="select">
+        <option value="alphanumeric" class="type">AlphaNumeric</option>
+        <option value="alpha">Alpha</option>
+        <option value="numeric">Numeric</option>
+      </select>
+      <button class="button1" onclick="generatePassword()">
+        Generate Password
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

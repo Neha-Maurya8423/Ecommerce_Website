@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+    <script>
+ function languageAdd(langName)
+ {
+  const li=document.createElement('li')
+  li.appendChild(document.createTextNode(`${langName}`))
+  document.querySelector('.language').appendChild(li);
+ }
+
+ languageAdd('javaScript');
+ languageAdd('python');
+ languageAdd('java');
+ //optimizelang('python');
+
+
+ const secondElement=document.querySelector("   li:nth-child(2)")
+    console.log(secondElement);
+    const newli=document.createElement('li');
+    newli.textContent='mojo';
+    secondElement.replaceWith(newli);
+    </script> 
+</body>
+
+</html>

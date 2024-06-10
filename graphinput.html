@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coin Graph</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Coin Graph</h1>
+    <div>
+      <label for="fiatInput">Enter Fiat Amount (e.g., USD):</label>
+      <input type="number" id="fiatInput" placeholder="Enter amount...">
+    </div>
+    <div>
+      <label for="cryptoInput">Enter Cryptocurrency Amount:</label>
+      <input type="number" id="cryptoInput" placeholder="Enter amount...">
+    </div>
+    <button onclick="addData()">Add Coin</button>
+    <canvas id="coinChart"></canvas>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="graph.js"></script>
+</body>
+</html>
